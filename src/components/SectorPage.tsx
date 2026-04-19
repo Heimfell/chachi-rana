@@ -198,10 +198,10 @@ export default function SectorPage({
                 1
               </span>
               <h4 className="font-bold text-white text-sm mb-1">
-                Cuéntanos tu negocio
+                Añade tu negocio
               </h4>
               <p className="text-rana-light/40 text-xs">
-                Nos pasas tu web, menú, lista de servicios...
+                Pega la URL de tu web o sube tus documentos.
               </p>
             </div>
             <div className="text-center">
@@ -209,10 +209,10 @@ export default function SectorPage({
                 2
               </span>
               <h4 className="font-bold text-white text-sm mb-1">
-                Lo entrenamos
+                Se entrena solo
               </h4>
               <p className="text-rana-light/40 text-xs">
-                Configuramos el chat con tus datos y tono.
+                El chat lee tu web y aprende todo automáticamente.
               </p>
             </div>
             <div className="text-center">
@@ -220,10 +220,10 @@ export default function SectorPage({
                 3
               </span>
               <h4 className="font-bold text-white text-sm mb-1">
-                Activo en tu web
+                Pega el código
               </h4>
               <p className="text-rana-light/40 text-xs">
-                Un código y listo. Empieza a atender clientes.
+                Copia el código en tu web. Funciona al instante.
               </p>
             </div>
           </div>
@@ -242,12 +242,11 @@ export default function SectorPage({
                 ¿Listo para <span className="gradient-text">empezar</span>?
               </h2>
               <p className="text-rana-light/60 text-lg mb-8 max-w-xl mx-auto">
-                Prueba gratis 7 días. Sin compromiso. Te configuramos todo en
-                24-48 horas.
+                Prueba gratis 7 días. Sin compromiso. Empieza en minutos.
               </p>
               <EmailCapture />
               <p className="text-rana-light/30 text-xs mt-4">
-                Te contactamos en menos de 24 horas.
+                Acceso inmediato. Tu chat listo en minutos.
               </p>
             </div>
           </div>

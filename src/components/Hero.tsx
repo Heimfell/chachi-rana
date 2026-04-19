@@ -11,7 +11,7 @@ export default function Hero() {
         <div className="flex-1 text-center lg:text-left">
           <div className="animate-fade-in-up">
             <span className="inline-block px-4 py-2 rounded-full bg-rana-gold/10 border border-rana-gold/20 text-rana-gold text-sm font-medium mb-6">
-              🔥 Nuevo: Chat IA para tu negocio
+              🔥 Nuevo: Crea tu Chat IA
             </span>
           </div>
 
@@ -22,7 +22,7 @@ export default function Hero() {
           </h1>
 
           <p className="animate-fade-in-up delay-200 text-lg sm:text-xl text-rana-light/70 max-w-lg mb-8 mx-auto lg:mx-0">
-            Herramientas SEO gratuitas y un chat IA que atiende a tus clientes 24/7. Todo lo que tu negocio necesita para crecer online.
+            Herramientas SEO gratuitas y un chat IA que atiende a tus clientes 24/7. Configúralo tú mismo en minutos. Todo lo que tu negocio necesita para crecer online.
           </p>
 
           <div className="animate-fade-in-up delay-300 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -30,7 +30,7 @@ export default function Hero() {
               href="/chat"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-rana-gold text-rana-dark font-bold text-lg transition-all duration-300 hover:scale-105 hover:bg-rana-gold/90 animate-gold-glow"
             >
-              🐸 Chat IA Gratis 7 días
+              🐸 Prueba el Chat IA gratis
             </a>
             <a
               href="#herramientas"

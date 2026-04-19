@@ -79,7 +79,7 @@ const config = {
     {
       icon: "💬",
       title: "Tono cercano",
-      text: "Lo configuramos para que hable como tú. Amable, cercano, con personalidad.",
+      text: "Configúralo para que hable como tú. Amable, cercano, con personalidad.",
     },
   ],
   examples: [

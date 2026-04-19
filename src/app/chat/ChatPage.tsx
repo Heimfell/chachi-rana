@@ -21,7 +21,7 @@ const benefits = [
     icon: "🧠",
     title: "Aprende de tu negocio",
     description:
-      "Lo entrenamos con tu web, menú, servicios, FAQs. Sabe lo que vendes.",
+      "Pega tu URL o sube tus documentos y el chat aprende solo. Sabe lo que vendes.",
   },
   {
     icon: "💰",
@@ -33,7 +33,7 @@ const benefits = [
     icon: "⚡",
     title: "Activo en minutos",
     description:
-      "Tú nos das tu URL, nosotros lo configuramos. Un código en tu web y listo.",
+      "Añade tu URL, el chat se entrena automáticamente. Copia un código en tu web y listo.",
   },
   {
     icon: "📊",
@@ -46,19 +46,19 @@ const benefits = [
 const steps = [
   {
     num: "1",
-    title: "Cuéntanos tu negocio",
-    description: "Nos pasas tu web o la info de tu negocio. Listo.",
+    title: "Añade tu negocio",
+    description: "Pega la URL de tu web o sube tus documentos. El chat lee todo.",
   },
   {
     num: "2",
-    title: "Nosotros lo configuramos",
-    description: "Entrenamos el chat con tus servicios, precios y FAQs.",
+    title: "Se entrena solo",
+    description: "Lee tu web y aprende tus servicios, precios y FAQs automáticamente.",
   },
   {
     num: "3",
-    title: "Un clic y funciona",
+    title: "Copia y pega",
     description:
-      "Pegas un código en tu web. El chat ya está atendiendo clientes.",
+      "Un código en tu web y el chat ya está atendiendo clientes.",
   },
 ];
 
@@ -101,29 +101,29 @@ const plans = [
     name: "Setup",
     price: "149",
     period: " único",
-    description: "Configuración profesional",
+    description: "¿Prefieres que lo hagamos nosotros?",
     features: [
-      "Análisis de tu negocio",
-      "Entrenamiento personalizado",
-      "Integración en tu web",
-      "Ajuste de tono y respuestas",
+      "Analizamos tu negocio",
+      "Entrenamos el chat por ti",
+      "Lo integramos en tu web",
+      "Ajustamos tono y respuestas",
       "1 revisión incluida",
       "Soporte las primeras 2 semanas",
     ],
     cta: "Solicitar setup",
     highlighted: false,
-    note: "Se suma al plan mensual",
+    note: "Servicio opcional, se suma al plan mensual",
   },
 ];
 
 const faqs = [
   {
     q: "¿Cómo funciona la prueba gratuita?",
-    a: "Te configuramos el chat con los datos de tu negocio y lo pruebas durante 7 días sin compromiso. Si te convence, eliges tu plan. Si no, lo borramos y listo.",
+    a: "Te registras, añades la URL de tu web y el chat se configura solo. Lo pruebas durante 7 días sin compromiso. Si te convence, eliges tu plan. Si no, lo borras y listo.",
   },
   {
     q: "¿Necesito saber programar?",
-    a: "No. Solo tienes que pegar un código en tu web (te decimos exactamente dónde). Si usas WordPress, Shopify o Wix es aún más fácil. Y si prefieres, lo hacemos nosotros con el Setup.",
+    a: "No. Solo tienes que copiar un código y pegarlo en tu web (te decimos exactamente dónde). Si usas WordPress, Shopify o Wix es aún más fácil. Y si prefieres no hacerlo tú, tenemos el servicio de Setup.",
   },
   {
     q: "¿El chat habla español?",
@@ -131,7 +131,7 @@ const faqs = [
   },
   {
     q: "¿De dónde saca la información el chat?",
-    a: "Lo entrenamos con tu web, tus documentos, precios, horarios, FAQs... Lo que nos pases. El chat solo responde con información de tu negocio.",
+    a: "Lo entrenas tú: pegas tu URL o subes documentos, FAQs, precios... Lo que quieras. El chat solo responde con información de tu negocio.",
   },
   {
     q: "¿Puedo ver las conversaciones?",
@@ -147,7 +147,7 @@ const faqs = [
   },
   {
     q: "¿En cuánto tiempo está funcionando?",
-    a: "Normalmente en 24-48 horas desde que nos das la info de tu negocio.",
+    a: "En 5 minutos. Pegas tu URL, copias el código y lo pones en tu web. Listo.",
   },
 ];
 
@@ -355,8 +355,7 @@ export default function ChatPage() {
             Hecho para <span className="gradient-text">tu sector</span>
           </h2>
           <p className="text-rana-light/60 text-lg max-w-2xl mx-auto">
-            Cada negocio es diferente. Adaptamos el chat a lo que vendes y a
-            cómo hablan tus clientes.
+            Cada negocio es diferente. Configura el chat para lo que vendes y cómo hablan tus clientes.
           </p>
         </div>
 
@@ -508,11 +507,11 @@ export default function ChatPage() {
                 <span className="gradient-text">trabaje por ti</span>?
               </h2>
               <p className="text-rana-light/60 text-lg mb-8 max-w-xl mx-auto">
-                Prueba gratis 7 días. Sin compromiso. Te configuramos todo.
+                Prueba gratis 7 días. Sin compromiso. Empieza ahora mismo.
               </p>
               <EmailCapture />
               <p className="text-rana-light/30 text-xs mt-4">
-                Te contactamos en menos de 24 horas.
+                Acceso inmediato. Tu chat listo en minutos.
               </p>
             </div>
           </div>

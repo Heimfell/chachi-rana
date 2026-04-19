@@ -3,20 +3,21 @@ import Link from "next/link";
 import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Blog SEO y Marketing Digital | Artículos en Español",
+  title: "Blog | Recursos para Negocios Digitales en Español",
   description:
-    "Artículos sobre SEO, marketing digital, herramientas IA y chatbots para negocios. Guías prácticas en español, sin humo.",
+    "Artículos sobre SEO, marketing digital, IA, herramientas y productividad para negocios. Guías prácticas en español, sin humo.",
   keywords: [
-    "blog SEO",
-    "artículos SEO español",
-    "marketing digital",
+    "blog negocios digitales",
+    "marketing online pymes",
     "herramientas IA",
+    "SEO en español",
     "chatbot negocios",
+    "productividad digital",
     "Chachi Rana blog",
   ],
   openGraph: {
-    title: "Blog SEO y Marketing Digital | Chachi Rana",
-    description: "Artículos sobre SEO, IA y chatbots para negocios en español.",
+    title: "Blog | Recursos para Negocios Digitales | Chachi Rana",
+    description: "Artículos sobre SEO, IA, herramientas y marketing para negocios en español.",
     url: "https://chachirana.com/blog",
   },
   alternates: {
@@ -38,10 +39,10 @@ export default function BlogPage() {
         </Link>
 
         <h1 className="text-4xl sm:text-5xl font-black mb-4">
-          Blog <span className="gradient-text">SEO</span>
+          El blog <span className="gradient-text">Chachi</span>
         </h1>
         <p className="text-rana-light/60 text-lg mb-12 max-w-2xl">
-          Artículos sobre SEO, marketing digital y herramientas para posicionar tu web. En español, sin humo.
+          Recursos, guías y artículos sobre negocio digital, IA, SEO, herramientas y marketing. En español, sin humo.
         </p>
 
         {posts.length === 0 ? (

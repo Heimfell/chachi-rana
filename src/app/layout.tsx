@@ -15,23 +15,24 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://chachirana.com"),
   title: {
-    default: "Chachi Rana | Herramientas IA y SEO Gratis en Español",
+    default: "Chachi Rana | Herramientas y Recursos para Negocios en Español",
     template: "%s | Chachi Rana",
   },
   description:
-    "Herramientas gratuitas de SEO, IA y chat para negocios. Schema Generator, Headline Analyzer, Meta Description Generator y más. Todo en español.",
+    "Herramientas gratuitas, chat IA para tu web y recursos para hacer crecer tu negocio online. Todo en español, sin registros innecesarios.",
   keywords: [
-    "herramientas SEO gratis",
-    "herramientas IA",
+    "herramientas digitales gratis",
+    "herramientas para negocios",
     "chat IA",
     "chatbot para negocios",
-    "schema generator",
-    "headline analyzer",
-    "meta description generator",
     "SEO en español",
+    "marketing online pymes",
+    "negocio digital España",
+    "herramientas IA gratis",
+    "inteligencia artificial negocios",
     "Chachi Rana",
-    "posicionar web",
-    "inteligencia artificial gratis",
+    "crecer online",
+    "productividad digital",
   ],
   authors: [{ name: "Chachi Rana" }],
   creator: "Chachi Rana",
@@ -52,23 +53,23 @@ export const metadata: Metadata = {
     locale: "es_ES",
     url: "https://chachirana.com",
     siteName: "Chachi Rana",
-    title: "Chachi Rana | Herramientas IA y SEO Gratis en Español",
+    title: "Chachi Rana | Herramientas y Recursos para Negocios en Español",
     description:
-      "Herramientas gratuitas de SEO, IA y chat para negocios. Todo en español, sin registro.",
+      "Herramientas gratuitas, chat IA para tu web y recursos para hacer crecer tu negocio online. Todo en español.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Chachi Rana - Herramientas IA y SEO Gratis",
+        alt: "Chachi Rana - Herramientas y Recursos para Negocios",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chachi Rana | Herramientas IA y SEO Gratis",
+    title: "Chachi Rana | Herramientas y Recursos para Negocios",
     description:
-      "Herramientas gratuitas de SEO, IA y chat para negocios. Todo en español.",
+      "Herramientas gratuitas, chat IA y recursos para tu negocio. Todo en español.",
     images: ["/og-image.png"],
   },
   alternates: {
@@ -94,7 +95,7 @@ export default function RootLayout({
     name: "Chachi Rana",
     url: "https://chachirana.com",
     description:
-      "Herramientas gratuitas de SEO, IA y chat para negocios en español.",
+      "Herramientas gratuitas, chat IA y recursos para hacer crecer tu negocio online. Todo en español.",
     potentialAction: {
       "@type": "SearchAction",
       target: "https://chachirana.com/blog?q={search_term_string}",

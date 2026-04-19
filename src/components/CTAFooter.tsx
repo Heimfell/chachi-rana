@@ -39,7 +39,7 @@ export default function CTAFooter() {
                 ¿Listo para <span className="gradient-text">saltar</span> al futuro?
               </h2>
               <p className="text-rana-light/60 text-lg mb-8 max-w-xl mx-auto">
-                Empieza a usar nuestras herramientas de IA gratis. Sin complicaciones, sin registros innecesarios.
+                Herramientas, chat IA y recursos para tu negocio. Todo gratis para empezar.
               </p>
               <a
                 href="https://chat.chachirana.com"

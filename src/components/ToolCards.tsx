@@ -103,7 +103,7 @@ export default function ToolCards() {
           Nuestras <span className="gradient-text">herramientas</span>
         </h2>
         <p className="text-rana-light/60 text-lg max-w-2xl mx-auto">
-          Todo lo que necesitas para potenciar tu negocio con inteligencia artificial
+          Herramientas, recursos y productos para que tu negocio crezca online
         </p>
       </div>
 
@@ -123,7 +123,7 @@ export default function ToolCards() {
           >
             {tool.featured && (
               <span className="absolute top-4 right-4 px-3 py-1 rounded-full bg-rana-gold/10 text-rana-gold text-xs font-bold border border-rana-gold/20">
-                🔥 Producto estrella
+                Producto estrella
               </span>
             )}
 
@@ -146,7 +146,7 @@ export default function ToolCards() {
                   : "text-rana-green group-hover:text-rana-lime"
               }`}
             >
-              {tool.featured ? "Empezar gratis 7 días" : "Probar ahora"}
+              {tool.featured ? "Probar gratis" : "Probar ahora"}
               <svg
                 className="w-4 h-4 transition-transform group-hover:translate-x-1"
                 fill="none"

@@ -10,8 +10,8 @@ export default function Hero() {
       <div className="relative z-10 max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
         <div className="flex-1 text-center lg:text-left">
           <div className="animate-fade-in-up">
-            <span className="inline-block px-4 py-2 rounded-full bg-rana-green/10 border border-rana-green/20 text-rana-light text-sm font-medium mb-6">
-              🐸 Herramientas IA para todos
+            <span className="inline-block px-4 py-2 rounded-full bg-rana-gold/10 border border-rana-gold/20 text-rana-gold text-sm font-medium mb-6">
+              🔥 Nuevo: Chat IA para tu negocio
             </span>
           </div>
 
@@ -22,15 +22,15 @@ export default function Hero() {
           </h1>
 
           <p className="animate-fade-in-up delay-200 text-lg sm:text-xl text-rana-light/70 max-w-lg mb-8 mx-auto lg:mx-0">
-            Inteligencia artificial al alcance de todos. Chat, SEO, herramientas y mucho más. Salta al futuro con nosotros.
+            Herramientas SEO gratuitas y un chat IA que atiende a tus clientes 24/7. Todo lo que tu negocio necesita para crecer online.
           </p>
 
           <div className="animate-fade-in-up delay-300 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a
-              href="#herramientas"
+              href="/chat"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-rana-gold text-rana-dark font-bold text-lg transition-all duration-300 hover:scale-105 hover:bg-rana-gold/90 animate-gold-glow"
             >
-              🚀 Empieza gratis
+              🐸 Chat IA Gratis 7 días
             </a>
             <a
               href="#herramientas"
@@ -46,7 +46,7 @@ export default function Hero() {
             <div className="gif-container aspect-square">
               <img
                 src="/rana-imagen-animada-0125.gif"
-                alt="Chachi Rana"
+                alt="Chachi Rana - Herramientas IA y SEO"
                 className="w-full h-full object-contain rounded-lg"
               />
             </div>

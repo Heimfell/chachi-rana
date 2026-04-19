@@ -1,5 +1,28 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/blog";
+
+export const metadata: Metadata = {
+  title: "Blog SEO y Marketing Digital | Artículos en Español",
+  description:
+    "Artículos sobre SEO, marketing digital, herramientas IA y chatbots para negocios. Guías prácticas en español, sin humo.",
+  keywords: [
+    "blog SEO",
+    "artículos SEO español",
+    "marketing digital",
+    "herramientas IA",
+    "chatbot negocios",
+    "Chachi Rana blog",
+  ],
+  openGraph: {
+    title: "Blog SEO y Marketing Digital | Chachi Rana",
+    description: "Artículos sobre SEO, IA y chatbots para negocios en español.",
+    url: "https://chachirana.com/blog",
+  },
+  alternates: {
+    canonical: "https://chachirana.com/blog",
+  },
+};
 
 export default function BlogPage() {
   const posts = getAllPosts();
@@ -63,6 +86,22 @@ export default function BlogPage() {
             ))}
           </div>
         )}
+
+        <div className="mt-16 rounded-2xl bg-rana-surface border border-rana-gold/30 p-8 text-center animate-gold-glow">
+          <span className="text-3xl mb-3 block">🐸</span>
+          <h3 className="text-xl font-bold mb-2">
+            ¿Tu web atiende clientes <span className="gradient-text">24/7</span>?
+          </h3>
+          <p className="text-rana-light/50 text-sm mb-4 max-w-md mx-auto">
+            Chachi Rana Chat es un chatbot IA que responde preguntas, captura leads y vende por ti. Pruébalo gratis.
+          </p>
+          <Link
+            href="/chat"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-rana-gold text-rana-dark font-bold hover:bg-rana-gold-dark transition-colors"
+          >
+            🚀 Probar Chat IA gratis
+          </Link>
+        </div>
       </div>
     </div>
   );

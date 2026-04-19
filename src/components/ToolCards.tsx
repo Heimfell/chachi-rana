@@ -4,6 +4,15 @@ import { useEffect, useRef } from "react";
 
 const tools = [
   {
+    icon: "💬",
+    title: "Chat IA",
+    description:
+      "Chatbot con IA que atiende a tus clientes 24/7. Captura leads, responde preguntas y vende por ti.",
+    href: "/chat",
+    available: true,
+    featured: true,
+  },
+  {
     icon: "🛠️",
     title: "Schema Generator",
     description:
@@ -20,36 +29,44 @@ const tools = [
     available: true,
   },
   {
-    icon: "💬",
-    title: "Chat IA",
+    icon: "📝",
+    title: "Meta Description Generator",
     description:
-      "Chatea con nuestra inteligencia artificial. Resuelve dudas, genera contenido y más.",
-    href: "https://chat.chachirana.com",
+      "Genera meta descriptions optimizadas con plantillas profesionales. Preview en Google en tiempo real.",
+    href: "/tools/meta-description-generator",
     available: true,
   },
   {
-    icon: "🔍",
-    title: "Meta Description Generator",
+    icon: "🖼️",
+    title: "Open Graph Preview",
     description:
-      "Genera meta descriptions optimizadas para tus páginas.",
-    href: "#",
-    available: false,
+      "Previsualiza cómo se ve tu enlace en Facebook, Twitter, LinkedIn y WhatsApp. Genera los OG tags.",
+    href: "/tools/og-preview",
+    available: true,
   },
   {
-    icon: "❓",
-    title: "FAQ Generator",
+    icon: "📋",
+    title: "Landing Page Score",
     description:
-      "Genera FAQs con schema markup JSON-LD incluido.",
-    href: "#",
-    available: false,
+      "Responde 20 preguntas sobre tu landing y descubre tu puntuación. Fixes específicos incluidos.",
+    href: "/tools/landing-page-score",
+    available: true,
   },
   {
-    icon: "🔎",
-    title: "Auditoría SEO",
+    icon: "🤖",
+    title: "Robots.txt Generator",
     description:
-      "Analiza tu web y recibe un informe completo con recomendaciones.",
-    href: "#",
-    available: false,
+      "Genera tu archivo robots.txt fácilmente. Configura qué bots rastrean tu web.",
+    href: "/tools/robots-txt-generator",
+    available: true,
+  },
+  {
+    icon: "✉️",
+    title: "Firma Email",
+    description:
+      "Crea firmas de email profesionales y modernas. Personaliza colores y copia el HTML.",
+    href: "/tools/email-signature",
+    available: true,
   },
 ];
 
@@ -90,23 +107,27 @@ export default function ToolCards() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {tools.map((tool, i) => (
           <a
             key={tool.title}
             href={tool.href}
-            target={tool.href.startsWith("http") ? "_blank" : undefined}
-            rel={tool.href.startsWith("http") ? "noopener noreferrer" : undefined}
-            className={`tool-card opacity-0 card-shine group relative rounded-2xl bg-rana-surface border border-rana-border p-8 transition-all duration-500 hover:scale-[1.03] hover:border-rana-green/50 hover:shadow-[0_0_40px_rgba(34,197,94,0.15)] cursor-pointer block`}
-            style={{ animationDelay: `${i * 150}ms` }}
+            className={`tool-card opacity-0 card-shine group relative rounded-2xl bg-rana-surface border p-8 transition-all duration-500 hover:scale-[1.03] cursor-pointer block ${
+              tool.featured
+                ? "border-rana-gold/50 lg:col-span-2 hover:border-rana-gold hover:shadow-[0_0_60px_rgba(251,191,36,0.2)]"
+                : tool.available
+                ? "border-rana-border hover:border-rana-green/50 hover:shadow-[0_0_40px_rgba(34,197,94,0.15)]"
+                : "border-rana-border opacity-60"
+            }`}
+            style={{ animationDelay: `${i * 100}ms` }}
           >
-            {!tool.available && (
-              <span className="absolute top-4 right-4 px-3 py-1 rounded-full bg-rana-gold/10 text-rana-gold text-xs font-medium border border-rana-gold/20">
-                Próximamente
+            {tool.featured && (
+              <span className="absolute top-4 right-4 px-3 py-1 rounded-full bg-rana-gold/10 text-rana-gold text-xs font-bold border border-rana-gold/20">
+                🔥 Producto estrella
               </span>
             )}
 
-            <span className="text-5xl mb-6 block group-hover:animate-float">
+            <span className={`${tool.featured ? "text-6xl" : "text-5xl"} mb-6 block group-hover:animate-float`}>
               {tool.icon}
             </span>
 
@@ -120,16 +141,14 @@ export default function ToolCards() {
 
             <div
               className={`inline-flex items-center gap-2 text-sm font-medium transition-colors ${
-                tool.available
-                  ? "text-rana-green group-hover:text-rana-lime"
-                  : "text-rana-light/30"
+                tool.featured
+                  ? "text-rana-gold group-hover:text-rana-gold-dark"
+                  : "text-rana-green group-hover:text-rana-lime"
               }`}
             >
-              {tool.available ? "Probar ahora" : "Disponible pronto"}
+              {tool.featured ? "Empezar gratis 7 días" : "Probar ahora"}
               <svg
-                className={`w-4 h-4 transition-transform group-hover:translate-x-1 ${
-                  tool.available ? "opacity-100" : "opacity-30"
-                }`}
+                className="w-4 h-4 transition-transform group-hover:translate-x-1"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
